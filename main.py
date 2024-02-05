@@ -222,13 +222,11 @@ def loopthread(message,otherss=False):
 
 def send_start(client: pyrogram.client.Client, message: pyrogram.types.messages_and_media.message.Message):
 
-    app.send_message(message.chat.id, f"__👋 Hi **{message.from_user.mention}**, i am Link Bypasser Bot, just send me any supported links and i will you get you results.\nCheckout /help to Read More__",
+    app.send_message(message.chat.id, f"**👋 Hi **{message.from_user.mention}**,I can Bypass several sites, just send me any supported links and i will you get you results.\nsend /help for Availaible sites**",
 
     reply_markup=InlineKeyboardMarkup([
 
-        [ InlineKeyboardButton("🌐 Source Code", url="https://github.com/bipinkrish/Link-Bypasser-Bot")],
-
-        [ InlineKeyboardButton("Replit", url="https://replit.com/@bipinkrish/Link-Bypasser#app.py") ]]), 
+        [ InlineKeyboardButton("Support", url="https://t.me/Mr_V_bots")]), 
 
         reply_to_message_id=message.id)
 
