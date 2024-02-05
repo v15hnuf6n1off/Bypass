@@ -225,10 +225,8 @@ def send_start(client: pyrogram.client.Client, message: pyrogram.types.messages_
     app.send_message(message.chat.id, f"**👋 Hi **{message.from_user.mention}**,I can Bypass several sites, just send me any supported links and i will you get you results.\nsend /help for Availaible sites**",
 
     reply_markup=InlineKeyboardMarkup([
-
-        [ InlineKeyboardButton("Support", url="https://t.me/Mr_V_bots")]), 
-
-        reply_to_message_id=message.id)
+      [ InlineKeyboardButton("Support", url="https://t.me/Mr_V_bots")]]),                  
+      reply_to_message_id=message.id)
 
 
 
